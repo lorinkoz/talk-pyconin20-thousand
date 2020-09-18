@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A thousand Djangos within</title>
+        <meta charset="utf-8" />
+        <link type="text/css" href="style/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <textarea id="source"></textarea>
+        <script src="remark.min.js"></script>
+        <script>
+            var slideshow = remark.create({
+                ratio: "16:9",
+                sourceUrl: "./slides.md",
+                navigation: {
+                    scroll: false,
+                },
+                slideNumberFormat: "@lorinkoz",
+                highlightLines: true,
+                highlightSpans: true,
+                highlightStyle: "vs",
+                countIncrementalSlides: false,
+            });
+        </script>
+    </body>
+</html>

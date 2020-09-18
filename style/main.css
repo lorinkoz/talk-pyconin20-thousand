@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans&family=Roboto+Mono&display=swap");
+
+h1,
+h2,
+h3 {
+    font-family: Bahnschrift, "Exo 2", sans-serif;
+    text-shadow: 1px 1px 2px darkslategray;
+    font-weight: normal;
+}
+
+h5 {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 1px solid darkslategray;
+}
+
+.remark-slide-content {
+    background: url("../images/noisy.png");
+    background-color: white;
+    font-family: "Segoe UI", "Open Sans", sans-serif;
+    font-size: 34px;
+    color: #333333;
+    border-left: 1em solid darkslategray;
+    padding: 1em 3em;
+}
+
+.remark-code,
+.remark-inline-code {
+    font-family: Consolas, "Roboto Mono", monospace;
+    font-size: 26px;
+}
+
+.remark-slide-number {
+    font-family: Bahnschrift, "Exo 2", sans-serif;
+    font-size: 20px;
+    top: 12px;
+}
+
+.left-column {
+    width: 49%;
+    float: left;
+}
+.right-column {
+    width: 49%;
+    float: right;
+}
+
+.left-column-33 {
+    width: 33%;
+    float: left;
+}
+.right-column-66 {
+    width: 66%;
+    float: right;
+}
+
+.left-column-66 {
+    width: 66%;
+    float: left;
+}
+.right-column-33 {
+    width: 33%;
+    float: right;
+}
+
+.right-column ~ p {
+    clear: both;
+}
+.right-column ~ ul {
+    clear: both;
+}
+
+.box {
+    font-family: Bahnschrift, "Exo 2", sans-serif;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    padding-left: 1em;
+    border-left: 0.5em solid darkslategray;
+    display: block;
+    background: rgba(100, 100, 100, 0.1);
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.warning {
+    font-family: Bahnschrift, "Exo 2", sans-serif;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    padding-left: 1em;
+    border-left: 0.5em solid darkred;
+    display: block;
+    background: rgba(100, 100, 100, 0.1);
+}
+
+.top {
+    margin-left: -3em;
+    margin-top: -1em;
+}
+
+.bottom {
+    position: fixed;
+    max-width: 70%;
+    bottom: 0;
+}
+
+.ref {
+    font-size: 0.7em;
+    color: crimson;
+    vertical-align: super;
+}
+
+.footnote {
+    font-size: 0.7em;
+    display: block;
+}
+
+.ref:before {
+    content: "[";
+}
+
+.ref:after {
+    content: "]";
+}
+
+.high {
+    font-size: 1.1em;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.red {
+    color: crimson;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.blue {
+    color: steelblue;
+}
+
+.yellow {
+    color: darkgoldenrod;
+}
+
+.emph {
+    text-decoration: underline;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.todo {
+    display: block;
+    background: pink;
+    color: darkred;
+    padding: 0.2em 1em;
+}
+
+.todo:before {
+    content: "TODO: ";
+    font-weight: bold;
+}
+
+table th,
+table td {
+    padding: 0em 0.5em;
+}
+
+a:link,
+a:active,
+a:visited,
+a:focus {
+    color: steelblue;
+    text-decoration: none;
+    font-family: Consolas;
+}
+
+li > p {
+    margin: 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.remark-notes {
+    font-size: 20px;
+}

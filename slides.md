@@ -1,7 +1,7 @@
 name: title
 class: middle
 
-# A thousand Djangos within<br/><small>or Django multi-tenant</small>
+# A thousand Djangoes within<br/><small>or Django multi-tenant</small>
 
 <hr/>
 

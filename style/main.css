@@ -4,7 +4,7 @@ h1,
 h2,
 h3 {
     font-family: Bahnschrift, "Exo 2", sans-serif;
-    text-shadow: 1px 1px 2px darkslategray;
+    text-shadow: 1px 1px 2px #555;
     font-weight: normal;
 }
 
@@ -13,7 +13,7 @@ h5 {
 }
 
 hr {
-    border: 1px solid darkslategray;
+    border: 1px solid #555;
 }
 
 .remark-slide-content {
@@ -22,7 +22,7 @@ hr {
     font-family: "Segoe UI", "Open Sans", sans-serif;
     font-size: 34px;
     color: #333333;
-    border-left: 1em solid darkslategray;
+    border-left: 1em solid #330000;
     padding: 1em 3em;
 }
 
@@ -128,7 +128,7 @@ hr {
 }
 
 .high {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .small {

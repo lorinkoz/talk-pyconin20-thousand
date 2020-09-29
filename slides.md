@@ -1,11 +1,116 @@
 name: title
 class: middle
 
-# A thousand Djangoes within<br/><small>or Django multi-tenant</small>
+# .high[A thousand Djangoes within]<br/>&nbsp;<small>or Django multi-tenant</small>
 
-<hr/>
+.right[![Logo of PyCon India 2020](images/logo.png)]
 
-![Logo of PyCon India 2020](images/logo.png)
+---
+
+## Syntax error
+
+Django.emph[es] &rightarrow; Django
+
+-   Django.emph[s]
+-   Django.emph[es]
+
+--
+
+<br/>
+
+# A thousand Django.emph[es] within
+
+---
+
+## Hi, I am...
+
+.left-column-66[
+
+#### Lorenzo Peña
+
+-   Proud citizen of Holguín, Cuba
+-   Django developer for 11 years
+-   Chaser of multi-tenancy challenges
+
+]
+.right-column-33[![Photo of myself](images/lorinkoz.jpg)]
+
+---
+
+class: middle
+layout: false
+
+## .blue[How to fit a thousand Djangoes within single a Django?]
+
+--
+
+# .green[Why does it matter?]
+
+---
+
+class: middle center
+layout: false
+
+![Meme of Abe Simpson with kids around](images/abe-simpson-meme.png)
+
+---
+
+layout: true
+
+## A tale of fitting Djangoes
+
+---
+
+--
+
+-   Once upon a time customer .red[**red**] had a problem.
+
+--
+
+-   Our brave hero developed a solution.
+
+--
+
+-   But then, customers .blue[**blue**], .green[**green**] and .yellow[**yellow**] showed up with the same problem.
+
+--
+
+.left-column-66[.box[🤔 What should our hero do?]]
+.right-column-33[.right[![Screenshot of Townscaper with a tiny red house](images/problem-solved.png)]]
+
+---
+
+.left-column-66[![Screenshot of Townscaper with tiny houses](images/single-tenancy.png)]
+
+--
+
+.right-column-33[
+
++20 tenacity
+<br/>
++10 strength
+<br/>
++30 patience
+
+]
+
+---
+
+.left-column-66[![Screenshot of Townscaper with an apartment building](images/multi-tenancy.png)]
+
+--
+
+.right-column-33[
+
++30 intelligence
+<br/>
++40 charisma
+<br/>
+mysterious gauntlet
+<br/>
+brand new badge
+
+]
 
 ---
 
@@ -22,36 +127,11 @@ layout: true
 
 ---
 
--   Customer .red[**red**] has a problem.
-
---
-
--   You develop a solution.
-
---
-
--   Now, customers .blue[**blue**], .green[**green**] and .yellow[**yellow**] have the same problem.
-
---
-
-.left-column-66[.box[🤔 What to do?]]
-.right-column-33[.right[![Screenshot of Townscaper with a tiny red house](images/problem-solved.png)]]
-
----
-
-.center[![Screenshot of Townscaper with tiny houses](images/single-tenancy.png)]
-
----
-
-.center[![Screenshot of Townscaper with an apartment building](images/multi-tenancy.png)]
-
----
-
 .left-column-66[
 
--   Software architecture.
--   Single instance of software.
--   Serves multiple tenants.
+-   Software architecture
+-   Single instance of software
+-   Serves multiple tenants
 
 ]
 
@@ -74,8 +154,8 @@ layout: true
 
 .left-column-66[
 
--   Isolated spaces.
--   Users with specific privileges interact.
+-   Isolated spaces
+-   Users with specific privileges interact
 
 ]
 .right-column-33[
@@ -110,6 +190,19 @@ layout: true
 
 ---
 
+layout: true
+class: middle center
+
+---
+
+![Meme of Multi-tenant Thanos saying "I'm inevitable"](images/thanos-meme-1.png)
+
+---
+
+![Meme of Ironman saying "I am a Django developer"](images/thanos-meme-2.png)
+
+---
+
 layout: false
 
 .box[`echo "Awesome!"`<br/>`python3 manage.py add-multi-tenancy --asap`]
@@ -123,13 +216,21 @@ layout: false
 layout: false
 class: middle
 
-# The active tenant
+# A thousand Djangoes within
+
+--
+
+-   The active tenant
+-   Three architectural choices
+-   The scope of everything else
 
 ---
 
 layout: true
 
 ## The active tenant
+
+---
 
 ---
 
@@ -392,7 +493,7 @@ class IsolatedTenantsDatabaseRouter:
 
 ---
 
-.center[![Scrooge McDuck in a pile of money](images/mcduck-gold.png)]
+.center[![Image of three very rich Bollywood actors](images/rich-indian-actors.png)]
 
 ---
 
@@ -825,48 +926,7 @@ def some_celery_task(self, `tenant_id`, ...):
 
 ---
 
-class: middle
 layout: false
-
-# Now, some of the packages
-
----
-
-layout: true
-
-## Available packages
-
----
-
-##### Shared database
-
--   [citusdata/django-multitenant](https://github.com/citusdata/django-multitenant)
--   [raphaelm/django-scopes](https://github.com/raphaelm/django-scopes)
-
-##### Semi-isolated database
-
--   [bernardopires/django-tenant-schemas](https://github.com/bernardopires/django-tenant-schemas)
--   [tomturner/django-tenants](https://github.com/tomturner/django-tenants)
-
----
-
-layout: false
-
-## Want to contribute?
-
---
-
--   Reporting bugs.
--   Implementing new features.
--   Improving documentation.
-
---
-
-.box[⭐ Come, we need .emph[you]!]
-
-.right[![Figurines used to represent users with sunglasses](images/figurines.png)]
-
----
 
 ## And that's it!
 
@@ -877,6 +937,10 @@ layout: false
 | Twitter | [@lorinkoz](https://twitter.com/lorinkoz)          |
 | GitHub  | [github.com/lorinkoz](https://github.com/lorinkoz) |
 | Email   | [lorinkoz@gmail.com](mailto:lorinkoz@gmail.com)    |
+
+--
+
+.center[![Figurines used to represent users with sunglasses](images/figurines.png)]
 
 ---
 

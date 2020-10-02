@@ -40,7 +40,7 @@ Django.emph[es] &rightarrow; Django
 class: middle
 layout: false
 
-## .blue[How to fit a thousand Djangoes within single a Django?]
+## .blue[How to fit a thousand Djangoes in a single Django?]
 
 --
 
@@ -67,7 +67,7 @@ layout: true
 
 --
 
--   Our brave hero developed a solution.
+-   Our brave hero developed a solution in Django.
 
 --
 
@@ -112,12 +112,9 @@ brand new badge
 
 ]
 
----
+--
 
-class: middle center
-layout: false
-
-![Meme of "Is this a pigeon?" about multi-tenancy](images/pigeon-meme-multi-tenancy.png)
+.right-column-33[##### .center[🎖️ Multi-tenancy]]
 
 ---
 
@@ -192,6 +189,8 @@ layout: true
 
 layout: true
 class: middle center
+
+---
 
 ---
 
@@ -622,39 +621,19 @@ Question.objects.create(...)
 
 ---
 
-Requires a **custom database backend** in order to set the search path based on the active tenant:
-
-```python
-from django.db.backends.postgresql import base as postgresql
-
-
-class DatabaseWrapper(postgresql.DatabaseWrapper):
-    def _cursor(self, name=None):  # Over simplified !!!
-        cursor = super()._cursor(name=name)
-        tenant = get_current_tenant()
-        schemas = `get_schemas_from_tenant(tenant)`
-        search_path = ",".join(schemas)
-*       cursor.execute(f"SET search_path = {search_path}")
-        return cursor
-```
-
----
-
-Requires a **database router** for controlling migrations:
-
-```python
-class SemiIsolatedTenantsDatabaseRouter:
-
-    def `allow_migrate`(self, db, app_label, model_name, ...):
-        tenant = get_current_tenant()
-        if tenant is not None:
-            return `is_tenant_specific(app_label, model_name)`
-        return not `is_tenant_specific(app_label, model_name)`
-```
+##### This is where:
 
 --
 
-.warning[⚠️ The `migrate` command itself requires tweaking!]
+-   Custom database backend to set the search path.
+
+--
+
+-   Custom `migrate` command to operate with schemas.
+
+--
+
+-   Custom database router with `allow_migrate`.
 
 ---
 
@@ -923,6 +902,35 @@ def some_celery_task(self, `tenant_id`, ...):
 --
 
 .box[💡 Principles are generally extensible]
+
+---
+
+class: middle
+layout: false
+
+# Now, some of the packages
+
+---
+
+layout: true
+
+## Available packages
+
+---
+
+##### Shared database
+
+-   [citusdata/django-multitenant](https://github.com/citusdata/django-multitenant)
+-   [raphaelm/django-scopes](https://github.com/raphaelm/django-scopes)
+
+##### Semi-isolated database
+
+-   [bernardopires/django-tenant-schemas](https://github.com/bernardopires/django-tenant-schemas)
+-   [tomturner/django-tenants](https://github.com/tomturner/django-tenants)
+
+.bottom[
+.footnote[More context in https://djangopackages.org/grids/g/multi-tenancy/]
+]
 
 ---
 
